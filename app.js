@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use("/api/user", usersRouter);
-app.use("/api/employees", employeesRouter);
+app.use("/user", usersRouter);
+app.use("/employees", employeesRouter);
 
 module.exports = app;
